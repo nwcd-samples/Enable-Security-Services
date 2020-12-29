@@ -1,0 +1,10 @@
+[
+    {
+        "ParameterKey": "AdministratorAccountId",
+        "ParameterValue": "012345678901"
+    },
+    {
+        "ParameterKey": "CreateInstanceRole",
+        "ParameterValue": "No"
+    }
+]
