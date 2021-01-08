@@ -49,12 +49,13 @@ python enableguardduty.py \
 * 命令参数--assume_role填入之前步骤中创建的GuardDuty角色名称，默认为ManageGuardDuty
 * 命令参数--enabled_regions指定启用服务的区域，多个区域使用逗号隔开
 * 命令参数最后一行为子账号信息CSV文件的路径
-* 如需在主账号以及子账号禁用AWS GuardDuty服务，请运行以下命令
+* 如需在主账号以及子账号禁用AWS GuardDuty服务，请运行以下命令，--delete_master参数可指定是否禁用主账号的AWS GuardDuty服务
 ```
 python disableguardduty.py \
     --master_account MASTER_ACCOUNT_ID \
     --assume_role ManageGuardDuty \
     --enabled_regions us-east-1,us-west-2,ap-southeast-1 \
+    --delete_master \
     data/accounts.csv
 
 ```
